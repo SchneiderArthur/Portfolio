@@ -55,6 +55,15 @@ const projects = [
     github: null,
     demo: null,
   },
+  {
+    title: 'MenuMapper AI — Pipeline de normalisation de données restaurant',
+    category: 'Projet personnel · 2025-2026',
+    desc: "Pipeline complet d'ingestion et normalisation de menus restaurant issus de sources hétérogènes (Lightspeed, Square, Tiller). Détection de quasi-doublons en trois approches complémentaires : fuzzy matching, embeddings sémantiques et LLM local (Ollama / llama3.2) pour les cas ambigus. Orchestration via LangGraph avec routing conditionnel, API REST FastAPI et 18 tests unitaires avec évaluation précision / rappel / F1.",
+    tags: ['Python 3.11', 'FastAPI', 'LangGraph', 'sentence-transformers', 'rapidfuzz', 'Ollama', 'Pydantic', 'pytest'],
+    color: '#3ac9e8',
+    github: 'https://github.com/SchneiderArthur/menumapper-ai',
+    demo: null,
+  },
 ]
 
 const fadeUp = {
