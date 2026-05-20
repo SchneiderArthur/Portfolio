@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowDown, Mail } from 'lucide-react'
+import { ArrowDown, Mail, Download } from 'lucide-react'
 import './Hero.css'
 
 const GithubIcon = () => (
@@ -142,6 +142,10 @@ export default function Hero() {
         >
           <a href="#projects" className="btn-primary">Voir mes projets</a>
           <a href="#contact" className="btn-secondary">Me contacter</a>
+          <a href="/CV-Schneider-Arthur.pdf" download className="btn-cv">
+            <Download size={16} />
+            Télécharger CV
+          </a>
         </motion.div>
 
         <motion.div
