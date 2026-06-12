@@ -6,12 +6,17 @@ const categories = [
   {
     title: 'IA & Data Science',
     color: '#c9a96e',
-    skills: ['Python', 'LSTM', 'Deep Learning', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'R'],
+    skills: ['Python', 'PyTorch', 'Deep Learning', 'LSTM', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'R'],
+  },
+  {
+    title: 'LLM & IA générative',
+    color: '#3ac9e8',
+    skills: ['LLM', 'RAG', 'Prompt Engineering', 'LangGraph', 'NLP', 'IA Responsable', 'Ollama', 'sentence-transformers'],
   },
   {
     title: 'Développement',
     color: '#6e8cc9',
-    skills: ['React', 'JavaScript', 'HTML / CSS', 'C#', 'Git'],
+    skills: ['React', 'TypeScript', 'JavaScript', 'HTML / CSS', 'FastAPI', 'SQL', 'C#', 'Git'],
   },
   {
     title: 'Outils & méthodes',
@@ -21,6 +26,7 @@ const categories = [
   {
     title: 'Soft skills',
     color: '#6ec9a9',
+    wide: true,
     skills: ['Leadership', 'Adaptabilité', 'Esprit d\'initiative'],
   },
 ]
@@ -54,7 +60,7 @@ export default function Skills() {
             variants={fadeUp}
             custom={i + 1}
           >
-            <GlowCard className="skill-card" style={{ '--cat-color': cat.color }}>
+            <GlowCard className={`skill-card${cat.wide ? ' skill-card--wide' : ''}`} style={{ '--cat-color': cat.color }}>
               <div className="skill-card-header">
                 <span className="skill-dot" />
                 <h3 className="skill-cat-title">{cat.title}</h3>
