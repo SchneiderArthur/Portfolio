@@ -64,6 +64,15 @@ const projects = [
     github: 'https://github.com/SchneiderArthur/menumapper-ai',
     demo: null,
   },
+  {
+    title: 'Poker Jetons — Gestion de jetons pour parties entre amis',
+    category: 'Projet personnel · 2025-2026',
+    desc: "Application web de gestion de jetons pour parties de poker entre amis avec de vraies cartes : gestion des mises, des pots (calcul automatique des pots secondaires en cas de tapis), des blindes, des gagnants et de l'historique des parties. Deux modes de jeu : appareil partagé ou multijoueur avec synchronisation temps réel via un code de salle. Logique poker (rotation des blindes, side pots, validation des actions, split pot) implémentée en TypeScript pur, séparée de l'UI.",
+    tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'Zustand', 'PWA', 'Vercel'],
+    color: '#2ec96e',
+    github: 'https://github.com/SchneiderArthur/poker-jetons',
+    demo: 'https://poker-jetons.vercel.app',
+  },
 ]
 
 const fadeUp = {
