@@ -1,7 +1,11 @@
 .projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  column-count: 2;
+  column-gap: 1.25rem;
+}
+
+.projects-list > div {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
 }
 
 .project-card {
@@ -93,6 +97,6 @@
 
 @media (max-width: 768px) {
   .projects-list {
-    grid-template-columns: 1fr;
+    column-count: 1;
   }
 }
